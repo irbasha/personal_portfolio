@@ -1,0 +1,9 @@
+<!-- project_index.html -->
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+	<img class="card-img-top" src="{% static project.image %}" style="height: 480px; width: 600px">
+	<div>{{project.title}}</div>
+	<div>{{project.description}}</div>
+	<div>{{project.technology}}</div>	
+{% endblock %}
